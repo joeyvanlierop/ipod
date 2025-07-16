@@ -75,7 +75,7 @@ func HandleExtRemote(req *ipod.Command, tr ipod.CommandWriter, dev DeviceExtRemo
 			CmdID:  req.ID.CmdID(),
 		})
 	case *RequestiPodName:
-		ipod.Respond(req, tr, &ReturniPodName{Name: ipod.StringToBytes("iPod Joey")})
+		ipod.Respond(req, tr, &ReturniPodName{Name: ipod.StringToBytes("iPod")})
 	case *ResetDBSelection:
 		ipod.Respond(req, tr, ackSuccess(req))
 	case *SelectDBRecord:
